@@ -15,7 +15,7 @@ class OldMiddleware {
      */
     public function handle($request, Closure $next) {
         if ($request->input('age') < 200) {
-            return redirect('profile');
+            return redirect(route('profile'));
         }
         return $next($request);
     }

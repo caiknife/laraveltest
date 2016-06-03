@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware(['old']);
 
 Route::get("/hello", function () {
     return "Hello, world!";
